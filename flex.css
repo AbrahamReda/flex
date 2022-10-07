@@ -1,85 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
-  height: 100%;
-}
-
 body {
-  font-family: Roboto, sans-serif;
+  height: 100vh;
   margin: 0;
-  background: #aaa;
-  color: #333;
-  /* I'll give you this one for free */
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.header{
+img {
+  width: 600px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
+
 }
 
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px 16px;
+}
 
-.text{
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
   margin-bottom: 16px;
 }
 
 
-.modal {
-  background: white;
-  width: 480px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+ul {
   display: flex;
-  gap: 16px;
-  padding: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
 }
 
-.icon {
-  color: royalblue;
-  font-size: 26px;
-  font-weight: 700;
-  background: lavender;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+.left-links{
+  padding:16px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  justify-content: space-between;
+  text-decoration: none;
+  text-align: left;
 }
 
-.close-button {
+
+.right-links{
+    padding: 16px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+  
+.footer {
   background: #eee;
-  border-radius: 50%;
-  color: #888;
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
+}
+
+
+
+
+.content {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-button {
-  padding: 8px 16px;
-  border-radius: 8px;
+
+a {
+  color: #666;
+  text-decoration: none;
 }
 
-button.continue {
-  background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
-}
 
-button.cancel {
-  background: white;
-  border: 1px solid #ddd;
-  color: royalblue;
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
 }
